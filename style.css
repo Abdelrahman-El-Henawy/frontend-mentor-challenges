@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --font-family: "Outfit", sans-serif;
+  --Font-size: 14px;
+  --light-font: 400;
+  --bold-font: 700;
+}
+body {
+  background-color: var(--Light-gray);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.attribution {
+  width: 80%;
+  margin: 0 auto;
+}
+.attribution p {
+  text-align: center;
+}
+section {
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  background-color: var(--White);
+  border-radius: 20px;
+  margin-inline: 16px;
+}
+figure {
+  width: 100%;
+}
+img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content p {
+  margin: 0 auto;
+  text-align: center;
+}
+.content P:first-child {
+  width: 90%;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: var(--bold-font);
+  line-height: 1.2;
+  margin-block: 14px;
+}
+.content P:nth-child(2) {
+  width: 96%;
+  font-size: var(--Font-size);
+  font-family: var(--font-family);
+  color: var(--Grayish-blue);
+  line-height: 1.2;
+  padding-block-end: 20px;
+}
